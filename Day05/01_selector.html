@@ -7,21 +7,42 @@
     <title>Selector</title>
 
     <style>
+
+        article{
+            border: 3px solid orange;
+        }
         /* 하위 선택자  */
-        /* TODO: 여기에 작성해보세요 */
+        article section ul{
+            /* (스타일 속성: (속성값))*/
+            color: red;
+
+        }
 
         /* 자식 선택자  */
-        /* TODO: 여기에 작성해보세요 */
+        article > section ul{
+            color: blue;
+        }
 
         /* 인접 선택자 */
-        /* TODO: 여기에 작성해보세요 */
+        h1 + h3 {
+            color: skyblue;
+            font-size: 30px;
+        }
 
         /* 형제자매 선택자 */
-        /* TODO: 여기에 작성해보세요 */
+        article ~ article h2 {
+            color: wheat;
+            background-color: red;
+            padding: 5px;
+
+        }
 
         /* 형제자매 선택자 */
         /* [형제자매인 선택자]~[스타일적용할 선택자] */
         /* TODO: 여기에 작성해보세요 */
+        p ~ span {
+            color: orange;
+        }
 
     </style>
 </head>
