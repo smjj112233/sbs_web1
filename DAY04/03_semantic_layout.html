@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시맨틱 요소 - 레이아웃</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
+    
+
+    <style>
+         * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        body{
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        header{
+            background-color: lightblue;
+            height: 100px;
+            line-height: 100px;
+            
+            text-align: center;
+            font-style: 20px;
+        }
+
+        nav{
+            float: left;
+            width: 20%;
+            height: 300px;
+            background-color: #339999;
+            padding: 20px;
+        }
+        
+        article{
+            float: left;
+            padding: 20px;
+            width: 80%;
+            background-color: #f1f1f1;
+            height: 300px;
+        }
+
+        section::after{
+            content:'';
+            display: block;
+            clear: both;
+        }
+
+        footer{
+            background-color: #ffcc00;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+
+
+        /*반응형 적용 - 가로 사이즈 600px 이하*/
+        @media screen and (max-width: 600px) {
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+
+
+    </style>
+</head>
+<body>
+    <h1>semantic 요소를 이용한 레이아웃</h1>
+    <header>
+        <h2>HEADER</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">menu 001</a></li>
+                <li><a href="#">menu 002</a></li>
+                <li><a href="#">menu 003</a></li>
+                <li><a href="#">menu 004</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>SBS 아카데미</h1>
+            <p>원질이 뭇 무엇이 대중을 눈에 풀밭에 인간의 사랑의 그러므로 보라. 같이 그들의 미인을 있음으로써 석가는 그러므로 자신과 것이다. 구하지 이상이 봄바람을 못할 운다. 청춘 뜨거운지라, 영원히 예수는 소금이라 그것은 때문이다. 청춘에서만 그들의 착목한는 더운지라 피고, 눈이 동력은 맺어, 목숨이 쓸쓸하랴? 우리 과실이 심장은 열매를 우리의 사는가 웅대한 이는 것이다. 같이, 무엇을 거선의 모래뿐일 커다란 불러 그들의 이상 이것이다.</p>
+            <p>원질이 뭇 무엇이 대중을 눈에 풀밭에 인간의 사랑의 그러므로 보라. 같이 그들의 미인을 있음으로써 석가는 그러므로 자신과 것이다. 구하지 이상이 봄바람을 못할 운다. 청춘 뜨거운지라, 영원히 예수는 소금이라 그것은 때문이다. 청춘에서만 그들의 착목한는 더운지라 피고, 눈이 동력은 맺어, 목숨이 쓸쓸하랴? 우리 과실이 심장은 열매를 우리의 사는가 웅대한 이는 것이다. 같이, 무엇을 거선의 모래뿐일 커다란 불러 그들의 이상 이것이다.</p>
+
+        </article>
+    </section>
+
+    <footer>
+        <h2>FOOTER</h2>
+    </footer>
+
+</body>
+</html>
