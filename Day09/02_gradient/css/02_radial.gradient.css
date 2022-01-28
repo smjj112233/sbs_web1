@@ -8,25 +8,33 @@
 
 /* 모양 */
 .ellipse { 
-    /* 여기에 작성해보세요:) */
+    background-image: radial-gradient(ellipse, #8a3ab9 0%, white 50%, #b53471 100% );
 }
 .circle { 
-    /* 여기에 작성해보세요:) */
+    background-image: radial-gradient(circle closest-side at 50% 50%,
+     #313552 10%, #B8405E 40%, #2EB086 70%, #EEE6CE 90%);
+     /* 퍼센트는 색상 시작 위치 가운데 가 50% 50% */
 }
 
 /* 사이즈 */
 .closest-corner {
-    /* 여기에 작성해보세요:) */
+    background-image: radial-gradient(closest-corner at 60% 50%,
+    #313552 10%, #B8405E 40%, #2EB086 70%, #EEE6CE 90%);
 }
+/* 중심점에거 가장 가까운 코너에 맞춰서 생김 */
 .closest-side {
-    /* 여기에 작성해보세요:) */
+    background-image: radial-gradient(closest-side at 60% 50%,
+    #313552 10%, #B8405E 40%, #2EB086 70%, #EEE6CE 90%);
 }
-
+/* 중심적에서 가장 먼 코너에 닿도록 생김 */
 .farthest-corner {
-    /* 여기에 작성해보세요:) */
+    background-image: radial-gradient(farthest-corner at 60% 50%,
+    #313552 10%, #B8405E 40%, #2EB086 70%, #EEE6CE 90%);
 }
+/* 중심점에서 가장 먼 코너에 끝점이 맞춰 생김 */
 .farthest-side {
-    /* 여기에 작성해보세요:) */
+    background-image: radial-gradient(farthest-side at 60% 50%,
+    rgba(131,125,231,1) 0%, rgba(70,68,208,1) 34%, rgba(39,39,227,1) 70%, rgba(30,126,181,1) 100%);
 }
 
 
