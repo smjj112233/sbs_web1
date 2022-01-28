@@ -11,10 +11,6 @@ h1{
     text-align: center;
 }
 
-.inner{
-    height: 100px;
-}
-
 .inner::after{
     display: block;
     content: '';
