@@ -13,13 +13,13 @@
 ul{list-style: none;}
 ul li a{text-decoration: none; color: black;}
 
-header nav{ float: left; height: 50px;text-align: center; }
+header nav{ float: left; height: 50px; text-align: center; }
 
 header nav .mainmenu{width: 600px; line-height: 60px;}
 
 /* 1차 메뉴 */
 header nav .mainmenu > li{
-    width: 25%; height: 50%; float: left; line-height: 100%;
+    width: 25%; float: left; line-height: 100%;
     color: black; transition: all 0.4s;
 }
 
@@ -32,7 +32,8 @@ header nav .mainmenu > li:hover > a{ color:  white;}
 
 /* 2차 메뉴 - submenu */
 header nav .submenu{display: none;}
-header nav .mainmenu > li:hover .submenu{display: block;}
+/*메인메뉴에  마우스를 올렸을 때  모든 서브 메뉴가 보여짐*/
+header nav .mainmenu:hover .submenu{display: block;}
 header nav .submenu li{
     background-color: #ddd; transition: all 0.4s;
 }
