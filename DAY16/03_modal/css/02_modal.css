@@ -51,7 +51,7 @@ div#modal {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0.7 /*확대추가함*/);
     width: 340px;
     height: 500px;
     padding: 0;
